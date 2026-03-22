@@ -1,0 +1,47 @@
+// Project - Restaurant v1.0
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        const askCustomer = confirm("Hello, Any order sir or ma'am")
+        if(!askCustomer){
+            alert("ok!, sir or ma'am you continue..")
+        }else{
+            const takeOrderConfirmation = confirm("Do you want to see menu?")
+            if(takeOrderConfirmation){
+                alert("1: Gajar Halwa\n 2: Rice & Daal")
+                const orderNumber = Number(prompt("Enter your dish number"));
+                if(orderNumber === 1){
+                    const sure = confirm("Please confirm your order")
+                    if(sure){
+                        alert(`⏳ Please wait... your order is preparing order number${orderNumber}`)
+
+                        
+                setTimeout(() => {
+                    alert("🎉 Your order is ready!")
+                },5000)
+                    }
+                }else if(orderNumber === 2){
+                    const sure = confirm("Please confirm your order")
+                    if(sure){
+                        alert(`⏳ Please wait... your order is preparing order number${orderNumber}`)
+
+                        
+                setTimeout(() => {
+                    alert("🎉 Your order is ready!")
+                },5000)
+                    }
+                }
+            }
+            
+        }
+    </script>
+</body>
+</html>
